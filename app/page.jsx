@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react'
 
 export const metadata = {
@@ -8,8 +9,13 @@ export const metadata = {
 
 const Homepage = () => {
   return (
-    <div>Homepage</div>
-  )
+    <div>
+      <div>
+        <h1 className="text-3xl">Welcome</h1>
+        <Link href='/properties'>Show all properties.</Link>
+      </div>
+    </div>
+  );
 }
 
 export default Homepage
