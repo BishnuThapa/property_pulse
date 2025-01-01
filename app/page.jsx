@@ -1,5 +1,7 @@
-import Link from 'next/link';
-import React from 'react'
+import Hero from "@/components/Hero";
+import Infoboxes from "@/components/Infoboxes";
+import Link from "next/link";
+import React from "react";
 
 export const metadata = {
   title: "Homepage",
@@ -9,13 +11,11 @@ export const metadata = {
 
 const Homepage = () => {
   return (
-    <div>
-      <div>
-        <h1 className="text-3xl">Welcome</h1>
-        <Link href='/properties'>Show all properties.</Link>
-      </div>
-    </div>
+    <>
+      <Hero />
+      <Infoboxes />
+    </>
   );
-}
+};
 
-export default Homepage
+export default Homepage;
