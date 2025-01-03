@@ -3,6 +3,7 @@ import HomeProperties from "@/components/HomeProperties";
 import Infoboxes from "@/components/Infoboxes";
 import Link from "next/link";
 import React from "react";
+import connectDB from "@/config/database";
 
 export const metadata = {
   title: "Homepage",
@@ -10,8 +11,9 @@ export const metadata = {
   keywords: "property, rentals, real estate, property pulse",
 };
 
-const Homepage = () => {
-  console.log(process.env.MONGODB_URI);
+const Homepage = async () => {
+  // console.log(process.env.MONGODB_URI);
+  await connectDB();
   return (
     <>
       <Hero />
