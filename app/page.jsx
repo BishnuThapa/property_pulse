@@ -11,6 +11,7 @@ export const metadata = {
 };
 
 const Homepage = () => {
+  console.log(process.env.MONGODB_URI);
   return (
     <>
       <Hero />
