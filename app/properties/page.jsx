@@ -3,6 +3,16 @@ import React from "react";
 import properties from "@/properties.json";
 import PropertyCard from "@/components/PropertyCard";
 
+
+async function fetchProperties() {
+  try {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_DOMAIN}/properties`);
+    
+  } catch (error) {
+    
+  }
+}
+
 const Propertiespage = () => {
   return (
     <>
